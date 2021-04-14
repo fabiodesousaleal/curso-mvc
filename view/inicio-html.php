@@ -7,6 +7,19 @@
 </head>
 <body>
 <div class="container">
+    <?php if (isset($_SESSION['logado'])): ?>
+
+    <nav class="navbar navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" href="/listar-cursos">Home</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/logout">Sair</a>
+            </li>
+        </ul>
+    </nav>
+
+    <?php endif; ?>
     <div class="jumbotron">
         <h1><?= $titulo; ?></h1>
     </div>

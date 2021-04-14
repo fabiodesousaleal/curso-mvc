@@ -7,6 +7,7 @@
                    id="descricao"
                    name="descricao"
                    class="form-control"
+                   minlength="3"
                    value="<?= isset($curso) ? $curso->getDescricao() : ''; ?>">
         </div>
         <button class="btn btn-primary">Salvar</button>
